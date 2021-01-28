@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Todo List</title>
+</head>
+
+<body>
+    <header>
+        <h1>My Todo list</h1>
+    </header>
+
+    <form>
+        <input type="text" class="todo-input no-outline">
+        <button class="todo-button no-outline" type="submit">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+        <div class = "select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="finished">Finished</option>
+                <option value="unfinished">Unfinished</option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
